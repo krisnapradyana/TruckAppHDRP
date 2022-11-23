@@ -25,6 +25,7 @@ namespace MainControl
         [SerializeField] RectTransform _tutorialHidePos;
 
         public Button _backButton;
+        public Button _exitButton;
         public TMP_Text _inspectText;
 
         //Tween container

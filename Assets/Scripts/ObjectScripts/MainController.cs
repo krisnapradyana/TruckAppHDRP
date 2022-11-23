@@ -137,6 +137,8 @@ namespace MainControl
 
             }
 
+            _uiController._exitButton.onClick.AddListener(() => Application.Quit());
+
             for (int i = 0; i < _inspectableObjects.Length; i++)
             {
                 var currentInspected = _inspectableObjects[i];
