@@ -237,8 +237,8 @@ Material:
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
     - _Metallic: 0
-    - _MetallicRemapMax: 0.99573106
-    - _MetallicRemapMin: 0.5549626
+    - _MetallicRemapMax: 0.9418893
+    - _MetallicRemapMin: 0.5011207
     - _Mode: 0
     - _NormalMapSpace: 0
     - _NormalScale: 3.19
@@ -255,8 +255,8 @@ Material:
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
     - _Smoothness: 0.5
-    - _SmoothnessRemapMax: 0.615795
-    - _SmoothnessRemapMin: 0.0896478
+    - _SmoothnessRemapMax: 0.6845426
+    - _SmoothnessRemapMin: 0.15839535
     - _SmoothnessTextureChannel: 0
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
@@ -296,9 +296,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+    - _BaseColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.30188674, g: 0.30188674, b: 0.30188674, a: 1}
+    - _Color: {r: 0.22641507, g: 0.22641507, b: 0.22641507, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
