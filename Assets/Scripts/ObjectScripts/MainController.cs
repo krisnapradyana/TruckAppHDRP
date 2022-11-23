@@ -31,12 +31,14 @@ namespace MainControl
         private float _xAxisMaxSpeed;
         private float _yAxisMaxSpeed;
         InspectableObject _currentInspected;
-        bool isInspecting;
+        bool _isAllowInspect;
+        bool _isInspecting;
         // Start is called before the first frame update
         void Start()
         {
             _xAxisMaxSpeed = _freeLookCam1.m_XAxis.m_MaxSpeed;
             _yAxisMaxSpeed = _freeLookCam1.m_YAxis.m_MaxSpeed;
+            _isAllowInspect = false;
 
             _uiController._backButton.onClick.AddListener(() => CancelSelect());
             RegisterInvocation();
@@ -71,9 +73,14 @@ namespace MainControl
             {
                 item.Priority = 0;
             }
+
+            foreach (var item in _inspectableObjects)
+            {
+                item.SetPointerVisibility(false);
+            }
             _freeLookCam1.Priority = 1;
-            _currentInspected.gameObject.layer = LayerMask.NameToLayer("Default");
-            isInspecting = false;
+            _isInspecting = false;
+            _isAllowInspect = true;
             _uiController.ToggleBack(false);
             _uiController.ToggleShowWindow(false);
         }
@@ -101,27 +108,27 @@ namespace MainControl
         {
             Debug.LogFormat("Checkpoint {0}", _checkpointCount);
             StartCoroutine(_uiController.ShowTutorialWithTimer());
+            _isAllowInspect = true;
 
             foreach (var item in _inspectableObjects)
             {
-                item.gameObject.layer = LayerMask.NameToLayer("Unselected Highlight");
                 item.trigger.AddEvent(EventTriggerType.PointerEnter, (data) => 
-                { 
-                    if (isInspecting)
+                {
+                    if (!_isAllowInspect || _isInspecting)
                     {
                         return;
                     }
-                    item.gameObject.layer = LayerMask.NameToLayer("Selected Highlight");
                     _uiController._inspectText.text = item.gameObject.name;
+                    item.GetComponent<InspectableObject>().SetPointerVisibility(true);
                 });
                 item.trigger.AddEvent(EventTriggerType.PointerExit, (data) => 
-                { 
-                    if (isInspecting)
+                {
+                    if (_isInspecting)
                     {
                         return;
                     }
-                    item.gameObject.layer = LayerMask.NameToLayer("Unselected Highlight");
                     _uiController._inspectText.text = "Hover to Inspect";
+                    item.GetComponent<InspectableObject>().SetPointerVisibility(false);
                 });
 
             }
@@ -136,7 +143,12 @@ namespace MainControl
                         return;
                     }
 
-                    if (isInspecting)
+                    if (_isInspecting)
+                    {
+                        return;
+                    }
+
+                    if (!_isAllowInspect)
                     {
                         return;
                     }
@@ -152,7 +164,8 @@ namespace MainControl
                     _uiController.ToggleBack(true);
                     _uiController.ToggleShowWindow(true);
                     _uiController.SetTexts(_currentInspected.GetItemData()._title, _currentInspected.GetItemData()._description);
-                    isInspecting = true;
+                    _isInspecting = true;
+                    _isAllowInspect = false;
                 });
             }
         }

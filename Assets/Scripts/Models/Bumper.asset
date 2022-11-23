@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Bumper
   m_EditorClassIdentifier: 
   _title: Bumber
-  _description: Protective parts of the truck. Protects Car and Driver inside cokcpit
+  _description: Protective parts of the truck. Protects Car and Driver inside cockpit
     from any field accident.

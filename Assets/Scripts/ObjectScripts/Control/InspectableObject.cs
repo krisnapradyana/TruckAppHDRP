@@ -15,6 +15,7 @@ namespace MainControl
         [field: SerializeField]
         public EventTrigger trigger { get; set; }
         [SerializeField] ItemDataScriptable itemData;
+        [SerializeField] GameObject pointerAnimation;
 
         public event Action<GameObject> onClick;
 
@@ -26,6 +27,11 @@ namespace MainControl
         public ItemDataScriptable GetItemData()
         {
             return itemData;
+        }
+
+        public void SetPointerVisibility(bool state)
+        {
+            pointerAnimation.SetActive(state);
         }
     }
 }
