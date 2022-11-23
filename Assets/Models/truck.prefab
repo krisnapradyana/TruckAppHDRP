@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154216115}
-  m_LocalRotation: {x: -0.0063318387, y: -0.85596216, z: 0.01048536, w: -0.5168935}
+  m_LocalRotation: {x: -0.0070260055, y: -0.8914118, z: 0.013827925, w: -0.45292872}
   m_LocalPosition: {x: -3.93, y: 0.1, z: 1.9}
   m_LocalScale: {x: 0.9090907, y: 0.9090908, z: 0.9090908}
   m_ConstrainProportionsScale: 0
@@ -96,7 +96,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &193916731
 Transform:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 2.21, y: 0.75, z: 0}
+  m_TrackedObjectOffset: {x: -1.66, y: 1.34, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -292,7 +292,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397054413}
-  m_LocalRotation: {x: -0.06738251, y: -0.71532464, z: -0.69247055, w: -0.06522968}
+  m_LocalRotation: {x: -0.035070613, y: -0.718266, z: -0.69405746, w: -0.033888586}
   m_LocalPosition: {x: -0.0115, y: -0.0605, z: 0.002}
   m_LocalScale: {x: 0.009090905, y: 0.009090906, z: 0.009090909}
   m_ConstrainProportionsScale: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 5062806241371308869}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 60.000004
+    FieldOfView: 42
     OrthographicSize: 5
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_TrackedObjectOffset: {x: -0.64, y: -0.27, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -444,7 +444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201620721}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0.27000383, y: 3.9799995, z: -3.4905448}
+  m_LocalPosition: {x: 0.27000383, y: 3.9799995, z: -3.4906163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -972,7 +972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: -0.35, y: 0, z: 0}
+  m_TrackedObjectOffset: {x: -1.46, y: 0, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -1005,7 +1005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1532224742
 Transform:
   m_ObjectHideFlags: 0
@@ -1129,7 +1129,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621681929}
-  m_LocalRotation: {x: -0.049012348, y: -0.6351015, z: 0.040435664, w: -0.769811}
+  m_LocalRotation: {x: -0.042591657, y: -0.5742333, z: 0.02993452, w: -0.8170349}
   m_LocalPosition: {x: -6.16, y: 1.84, z: -1.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 3351387517218167279}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 60.000004
+    FieldOfView: 42
     OrthographicSize: 5
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -1201,7 +1201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1725279664
 Transform:
   m_ObjectHideFlags: 0
@@ -2974,6 +2974,7 @@ MonoBehaviour:
   <vCam>k__BackingField: {fileID: 397054415}
   <trigger>k__BackingField: {fileID: 6187726893130775828}
   itemData: {fileID: 11400000, guid: 012dffa29dae72f4f9a638819d026919, type: 2}
+  pointerAnimation: {fileID: 1725279663}
 --- !u!65 &6559190111241918299
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5837,6 +5838,7 @@ MonoBehaviour:
   <vCam>k__BackingField: {fileID: 1621681931}
   <trigger>k__BackingField: {fileID: 8614894042855187572}
   itemData: {fileID: 11400000, guid: 64ef202914861f34c88613c07c42ed7d, type: 2}
+  pointerAnimation: {fileID: 1532224739}
 --- !u!114 &8614894042855187572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6931,6 +6933,7 @@ MonoBehaviour:
   <vCam>k__BackingField: {fileID: 154216117}
   <trigger>k__BackingField: {fileID: 8323097143555665098}
   itemData: {fileID: 11400000, guid: 9d0c650d6576a9540ae63c9128203fff, type: 2}
+  pointerAnimation: {fileID: 193916730}
 --- !u!114 &8323097143555665098
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -27,6 +27,9 @@ namespace MainControl
         [SerializeField] CinemachineVirtualCamera _vCam1;
         [SerializeField] CinemachineVirtualCamera[] _vCamCameras;
 
+        [Header("MockupUI")]
+        [SerializeField] GameObject _mockupUI;
+
         public int _checkpointCount;
         private float _xAxisMaxSpeed;
         private float _yAxisMaxSpeed;
@@ -81,6 +84,7 @@ namespace MainControl
             _freeLookCam1.Priority = 1;
             _isInspecting = false;
             _isAllowInspect = true;
+            _mockupUI.SetActive(false);
             _uiController.ToggleBack(false);
             _uiController.ToggleShowWindow(false);
         }
@@ -162,8 +166,9 @@ namespace MainControl
                     _currentInspected.gameObject.layer = LayerMask.NameToLayer("Default");
                     _currentInspected.SelectThisCamera();
                     _uiController.ToggleBack(true);
-                    _uiController.ToggleShowWindow(true);
-                    _uiController.SetTexts(_currentInspected.GetItemData()._title, _currentInspected.GetItemData()._description);
+                    _mockupUI.SetActive(true);
+                    //_uiController.ToggleShowWindow(true);
+                    //_uiController.SetTexts(_currentInspected.GetItemData()._title, _currentInspected.GetItemData()._description);
                     _isInspecting = true;
                     _isAllowInspect = false;
                 });
