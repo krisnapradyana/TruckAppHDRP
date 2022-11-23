@@ -23,6 +23,10 @@ namespace MainControl
         [SerializeField] RectTransform _hidePos;
         [SerializeField] RectTransform _tutorialShowPos;
         [SerializeField] RectTransform _tutorialHidePos;
+        [SerializeField] RectTransform _360UIPos;
+
+        [Header("Extra UI Attributes")]
+        [SerializeField] RectTransform _360UI;
 
         public Button _backButton;
         public Button _exitButton;
@@ -62,6 +66,11 @@ namespace MainControl
                     _descriptionWindow.GetComponent<CanvasGroup>().DOFade(0f, .3f);
                     break;
             }
+        }
+
+        public void Show360UI()
+        {
+            _360UI.DOMoveY(_360UIPos.position.y, .75f);
         }
 
         public void ToggleBack(bool state)

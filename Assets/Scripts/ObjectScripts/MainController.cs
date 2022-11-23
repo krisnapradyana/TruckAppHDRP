@@ -53,6 +53,11 @@ namespace MainControl
         {
             _truckBehaviour.MoveVehicle();
             ActivateMouseOrbit();
+
+            if(Keyboard.current.escapeKey.wasPressedThisFrame)
+            {
+                Application.Quit();
+            }
         }
 
 
@@ -113,6 +118,7 @@ namespace MainControl
             Debug.LogFormat("Checkpoint {0}", _checkpointCount);
             StartCoroutine(_uiController.ShowTutorialWithTimer());
             _isAllowInspect = true;
+            _uiController.Show360UI();
 
             foreach (var item in _inspectableObjects)
             {
